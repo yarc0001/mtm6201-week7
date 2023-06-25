@@ -1,0 +1,30 @@
+.dice4 circle {
+  fill:#F57C00;
+  transition: all .5s;
+  transform-origin: 25px 25px;
+}
+
+.dice4:hover circle{
+  transform: scale(1.1);
+}
+
+
+.dice5 g{
+  transition: all .5s;
+  transform-origin: 100px 100px;
+}
+
+.dice5:hover g{
+  transform: scale(1.2) rotate(90deg);
+}
+
+.patterntext{
+   font-size: 6rem;
+   font-weight: bold;
+}
+
+.cls-1{fill:#ffe269;}
+
+.cls-2{fill:#fff;}
+
+.cls-3{fill:#fcf0c0;}

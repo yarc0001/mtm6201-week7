@@ -7,6 +7,62 @@
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+  <div class="container">
+    <h1>SVG - Scalable Vector Graphic</h1>
+    <img src="images/myfirst.svg" alt="Graphic of a square">
+    <svg width="200" height="200" viewBox="0 0 200 200"> 
+      <rect x="0" y="0" width="200" height="200" rx="8" ry="4" fill="#FF0000" />
+      <circle  cx="50"  cy="50" r="25"  fill="4DD0E1"/>
+      </svg>
+
+      <svg class="dice4" width="200" height="200" viewBox="0 0 200 200"> 
+        <rect x="0" y="0" width="200" height="200" rx="8" ry="4" fill="#FF0000" />
+        <circle id="dot" cx="50"  cy="50" r="25"  fill="4DD0E1"/>
+      <use xlink:href="#dot" x="100"/>
+      <use xlink:href="#dot" x="100" y="100"/>
+      <use xlink:href="#dot" y="100"/>
+        </svg>
+
+
+        <svg class="dice5" width="200" height="200" viewBox="0 0 200 200">
+          <defs>
+          <rect id="box" x="0" y="0" width="200" height="200" rx="8" ry="4" fill="#FF0000" />
+          <circle id="point" cx="50"  cy="50" r="25"  fill="4DD0E1"/>
+        </defs> 
+        <use xlink:href="#box"/>
+        <g>
+          <use xlink:href="#point"/>
+          <use xlink:href="#point" x="100"/>
+          <use xlink:href="#point" y="100"/>
+          <use xlink:href="#point" x="100" y="100"/>
+          <use xlink:href="#point" x="50" y="50"/>
+        </g>
+          </svg>
+
+          <svg width="320" heigth="200" viewBox="0 0 320 200">
+            <defs>
+              <pattern width="320" height="200" id="zigzag" patternUnits="userSpaceOnUse">
+                <image width="320"  height="200" xlink:href="http://placepattern.com/320/200"/>
+              </pattern>
+            </defs>
+            <text class="patterntext" x="0" y="100" fill="url(#zigzag)">Pattern</text>
+          </svg>
+
+          <div class="svg-wrap">
+            <svg id="smily" viewBox="0 0 487 484" width="487" height="484">
+              <g id="face">
+                <circle class="cls-1" cx="241" cy="243" r="234" />
+              </g>
+              <path id="mouth" class="cls-2" d="M100,292H381.79s-18,78-140.9,78S100,292,100,292Z" />
+              <ellipse id="eye-l" class="cls-2" cx="141.5" cy="154" rx="37.5" ry="65" />
+              <ellipse id="eye-r" class="cls-2" cx="342.5" cy="154" rx="37.5" ry="65" />
+              <circle class="pupil" id="pupil-l" cx="137.5" cy="182.5" r="24.5" />
+              <circle class="pupil" id="pupil-r" cx="337.5" cy="182.5" r="24.5" />
+              <path id="eyelash-l" class="cls-3" d="M179,154c-37,2-37,0-75,0,0-35.9,16.79-65,37.5-65S179,118.1,179,154Z" />
+              <path id="eyelash-r" class="cls-3" d="M380,154c-37,2-37,0-75,0,0-35.9,16.79-65,37.5-65S380,118.1,380,154Z" />
+            </svg>
+          </div>
+  </div>
   
 </body>
 </html>
